@@ -36,14 +36,16 @@ public struct RenaultApiClient: ApiClient {
     private var myRenaultPass: String
     private var kamereonAccountId: String
     private var gigyaURL = "accounts.eu1.gigya.com"
-    private var gigyaAPI = "TO_FILL"
+    private var gigyaAPI: String
     private var kamareonURL = "api-wired-prod-1-euw1.wrd-aws.com"
-    private var kamareonAPI = "TO_FILL"
+    private var kamareonAPI: String
 
-    public init(username: String, password: String, kamereonAccountId: String) {
+    public init(username: String, password: String, kamereonAccountId: String, gigyaApiKey: String, kamareonApiKey: String) {
         self.myRenaultUser = username
         self.myRenaultPass = password
         self.kamereonAccountId = kamereonAccountId
+        self.gigyaAPI = gigyaApiKey
+        self.kamareonAPI = kamareonApiKey
     }
 
     public mutating func setPassword(password: String) {
