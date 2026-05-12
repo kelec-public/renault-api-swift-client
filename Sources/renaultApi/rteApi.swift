@@ -11,10 +11,11 @@ import Foundation
 @available(watchOS 6.0, *)
 @available(macOS 12.0, *)
 public struct rteApi {
-    private var basicAuth = "BASIC_AUTH_TO_FILL"
+    private var basicAuth: String
     private var apiUrl = "digital.iservices.rte-france.com"
 
-    public init() {
+    public init(basicAuth: String) {
+        self.basicAuth = basicAuth
 
     }
 
