@@ -20,6 +20,8 @@ public enum ApiClientError: Error {
 
 public enum CarMaker: String, Codable {
     case RENAULT = "renault"
+    case ALPINE = "alpine"
+    case DACIA = "dacia"
     case
     HYUNDAI = "hyundai"
     case
